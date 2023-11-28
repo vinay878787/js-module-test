@@ -46,6 +46,14 @@ body {
   font-weight: 600;
   letter-spacing: 0.2062rem;
 }
+.btn-holder{
+  width:22%;
+  display: flex;
+  position: fixed;
+  bottom:10px;
+  right:-130px;
+  
+}
 .btn-rules {
   max-width: 7rem;
   padding: 10px 15px;
@@ -55,11 +63,25 @@ body {
   font-weight: 600;
   letter-spacing: 0.13125rem;
   border-radius: 0.625rem;
-  position: fixed;
-  bottom: 15px;
-  right: 35px;
   font-size: 1rem;
   cursor: pointer;
+  margin-right:10px;
+}
+.btn-next {
+  max-width: 7rem;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.13125rem;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: none;
+}
+.btn-next-a{
+  text-decoration: none;
 }
 .rules-container {
   width: 17%;
@@ -117,12 +139,14 @@ li::before {
   left: 500px;
 }
 .blue-container {
+  
   position: relative;
   top: 0;
   cursor: pointer;
   z-index: 999;
 }
 .purple-container {
+  width:30%;
   position: relative;
   bottom: 335px;
   left: 269px;
@@ -130,6 +154,7 @@ li::before {
   z-index: 999;
 }
 .yellow-container {
+  width:30%;
   position: relative;
   top: 32px;
   right: -130px;
@@ -140,17 +165,20 @@ li::before {
   position: absolute;
   top: 45px;
   left: 43px;
+  cursor: pointer;
 }
 .hand-scissors {
   position: absolute;
   top: 45px;
   left: 64px;
   z-index: 999;
+  cursor: pointer;
 }
 .hand-paper {
   position: absolute;
   bottom: 50px;
   left: 46px;
+  cursor: pointer;
 }
 
 .line1 {
@@ -255,45 +283,125 @@ li::before {
                36px 36px 36px 36px rgba(74, 209, 53, 0.125);
   height: 160px;
 } */
-.fightContainer-pcEllipse{
+.fightContainer-pcEllipse {
   position: relative;
   top: 48px;
   left: 330px;
 }
 
-.pcChoice1{
+.pcChoice1 {
   position: absolute;
   top: 92px;
   right: 154px;
   z-index: 999;
 }
-.pcChoice2{
+.pcChoice2 {
   position: absolute;
   top: 92px;
   right: 144px;
   z-index: 999;
 }
-.pcChoice3{
+.pcChoice3 {
   position: absolute;
   top: 92px;
   right: 154px;
   z-index: 999;
 }
-.result{
-  width:20%;
-  color:#fff;
-  font-size:1.5rem;
+.result {
+  width: 20%;
+  color: #fff;
+  font-size: 1.5rem;
   font-weight: 900;
   position: absolute;
-  top:90px;
-  left:340px;
+  top: 90px;
+  left: 340px;
 }
-.score1{
-  font-size:3rem;
-  color:#252525;
+.score1 {
+  font-size: 3rem;
+  color: #252525;
 }
-.score2{
-  font-size:3rem;
-  color:#252525;
+.score2 {
+  font-size: 3rem;
+  color: #252525;
 }
-
+.playAgain {
+  width: 10.875rem;
+  height: 2.75rem;
+  border-radius: 0.5625rem;
+  background: #fff;
+  position: absolute;
+  top: 67%;
+  left: 44%;
+  color: #6b6b6b;
+  display: none;
+  font-family: Roboto;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.09375rem;
+  border: none;
+  z-index: 99999;
+  cursor: pointer;
+}
+.heroCup{
+ width:44vw;
+  height:71vh;
+  position: relative;
+  top:200px;
+  left:700px;
+}
+.star5{
+position: absolute;
+top:170px;
+left:-50px;
+}
+.star1{
+  position: absolute;
+top:15px;
+left:-140px;
+}
+.star9{
+  position: absolute;
+top:-40px;
+left:-70px;
+}
+.star3{
+  position: absolute;
+  top:-100px;
+  left:-40px;
+}
+.star4{
+  position: absolute;
+  top:-70px;
+  left:50px;
+}
+.star2{
+  position: absolute;
+  top:-100px;
+  right:410px;
+}
+.star7{
+  position: absolute;
+  top:10px;
+  right:360px;
+}
+.star6{
+  position: absolute;
+  top:50px;
+}
+.playAgain-H {
+  width: 10.875rem;
+  height: 2.75rem;
+  border-radius: 0.5625rem;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  color: #6b6b6b;
+  font-family: Roboto;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.09375rem;
+  border: none;
+  z-index: 99999;
+  cursor: pointer;
+}
