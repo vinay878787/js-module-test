@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #8cc461;
+  font-family: "Roboto", sans-serif;
+}
+.box-score {
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  max-width: 50rem;
+  border-radius: 0.8125rem;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+}
+.score-heading {
+  color: #fff;
+  color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.25rem;
+  max-width: 10%;
+  padding-top: 10px;
+}
+.score-results {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+.score-numbers {
+  background-color: #fff;
+  max-width: 8rem;
+  height: 7rem;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #656565;
+  font-weight: 600;
+  letter-spacing: 0.2062rem;
+}
+.btn-rules {
+  max-width: 7rem;
+  padding: 10px 15px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.13125rem;
+  border-radius: 0.625rem;
+  position: fixed;
+  bottom: 15px;
+  right: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.rules-container {
+  width: 17%;
+  position: fixed;
+  bottom: 55px;
+  right: 35px;
+  border: 7px solid #fff;
+  color: #fff;
+  background: #004429;
+  padding: 20px;
+  font-size: 0.8125rem;
+  border-radius: 6%;
+  display: none;
+}
+
+.rules-heading {
+  text-align: center;
+  font-size: 1.8rem;
+}
+.rules-points {
+  margin-top: 10px;
+  list-style: none;
+}
+
+li::before {
+  content: "▪️";
+  color: yellow;
+  font-size: 18px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.ellipse {
+  position: fixed;
+  right: 10px;
+  top: 320px;
+}
+.btn-close {
+  position: absolute;
+  right: -13px;
+  top: -20px;
+  font-size: 2.5rem;
+  z-index: 999;
+  cursor: pointer;
+}
+.choices-card {
+  width: 40%;
+  height: 50vh;
+  /* border:2px solid black; */
+  position: relative;
+  top: 320px;
+  left: 500px;
+}
+.blue-container {
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+.purple-container {
+  position: relative;
+  bottom: 335px;
+  left: 269px;
+  cursor: pointer;
+  z-index: 999;
+}
+.yellow-container {
+  position: relative;
+  top: 32px;
+  right: -130px;
+  cursor: pointer;
+  z-index: 999;
+}
+.hand-rock {
+  position: absolute;
+  top: 45px;
+  left: 43px;
+}
+.hand-scissors {
+  position: absolute;
+  top: 45px;
+  left: 64px;
+  z-index: 999;
+}
+.hand-paper {
+  position: absolute;
+  bottom: 50px;
+  left: 46px;
+}
+
+.line1 {
+  border: 5px solid rgba(0, 0, 0, 0.64);
+  width: 127px;
+  position: absolute;
+  top: 80px;
+  left: 153px;
+}
+.line2 {
+  border: 5px solid rgba(0, 0, 0, 0.64);
+  width: 106px;
+  position: absolute;
+  transform: rotate(45deg);
+  bottom: 172px;
+  left: 105px;
+}
+.line3 {
+  border: 5px solid rgba(0, 0, 0, 0.64);
+  width: 106px;
+  position: absolute;
+  transform: rotate(-45deg);
+  bottom: 172px;
+  left: 220px;
+}
+.fight-container {
+  width: 50%;
+  height: 63vh;
+  /* border: 2px solid black; */
+  position: relative;
+  top: 250px;
+  left: 360px;
+}
+.headingContainer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  /* border: 2px solid red; */
+}
+.heading1 {
+  text-align: left;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 0.10625rem;
+}
+.heading2 {
+  text-align: end;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 0.10625rem;
+}
+.imageContainer {
+  width: 100%;
+  height: 52vh;
+  display: flex;
+  justify-content: space-around;
+  /* border: 2px solid yellow; */
+  position: relative;
+}
+.userSpace {
+  width: 50%;
+  height: 40vh;
+  /* background-color: red; */
+}
+.pcSpace {
+  width: 50%;
+  height: 40vh;
+  /* background-color: violet; */
+}
+.fightContainer-ellipse {
+  position: relative;
+  top: 50px;
+  left: 123px;
+}
+.userChoice1 {
+  position: absolute;
+  top: 92px;
+  left: 165px;
+  z-index: 999;
+}
+.userChoice2 {
+  position: absolute;
+  top: 92px;
+  left: 166px;
+  z-index: 999;
+}
+.userChoice3 {
+  position: absolute;
+  top: 92px;
+  left: 184px;
+  z-index: 999;
+}
+/* .green-ring {
+  box-shadow: 4px 4px 4px 4px rgba(74, 209, 53, 0.5),
+               12px 12px 12px 12px rgba(74, 209, 53, 0.25),
+               36px 36px 36px 36px rgba(74, 209, 53, 0.125);
+  height: 160px;
+} */
+.fightContainer-pcEllipse{
+  position: relative;
+  top: 48px;
+  left: 330px;
+}
+
+.pcChoice1{
+  position: absolute;
+  top: 92px;
+  right: 154px;
+  z-index: 999;
+}
+.pcChoice2{
+  position: absolute;
+  top: 92px;
+  right: 144px;
+  z-index: 999;
+}
+.pcChoice3{
+  position: absolute;
+  top: 92px;
+  right: 154px;
+  z-index: 999;
+}
+.result{
+  width:20%;
+  color:#fff;
+  font-size:1.5rem;
+  font-weight: 900;
+  position: absolute;
+  top:90px;
+  left:340px;
+}
+.score1{
+  font-size:3rem;
+  color:#252525;
+}
+.score2{
+  font-size:3rem;
+  color:#252525;
+}
+
